@@ -1,0 +1,4 @@
+# Python 3.10 or newer.  The web server, consumers and broker use only the standard library.
+psycopg[binary]>=3.1      # PostgreSQL driver
+numpy>=1.24
+scikit-learn>=1.3         # ETA models + Isolation Forest (without it the ETA falls back to the rule-based estimate)

@@ -1,0 +1,46 @@
+# ---- secrets and credentials: never commit these
+.env
+.env.*
+*.pem
+*.key
+*.pfx
+*.p12
+id_rsa*
+id_ed25519*
+*.kdbx
+secrets.*
+credentials.*
+# the Word file that lists every demo login (the demo accounts are in logistics/seed.py)
+LogiShop_Accounts_and_How_To_Run.docx
+
+# ---- runtime state created by the application (rebuilt on first start)
+data/
+# database exports contain row data and password hashes; regenerate with scripts/export_db.py
+exports/
+*.sqlite
+*.sqlite3
+*.db
+*.db-shm
+*.db-wal
+*.joblib
+
+# ---- Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+
+# ---- editors, OS and Office leftovers
+.vscode/
+.idea/
+.claude/
+.DS_Store
+Thumbs.db
+desktop.ini
+~$*
+*.tmp
+*.bak
+*.log

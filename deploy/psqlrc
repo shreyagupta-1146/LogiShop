@@ -1,0 +1,13 @@
+\set QUIET 1
+\pset linestyle unicode
+\pset border 2
+\pset null '∅'
+\x auto
+\timing on
+\set PROMPT1 '%n@%/ %R%# '
+\set PROMPT2 '   -> '
+\set QUIET 0
+\echo '== logistics database (PostgreSQL 16)  -  connected as the role shown in the prompt =='
+\echo 'schemas: shop (storefront)  logistics (fulfilment)  infra (audit, outbox, sessions)'
+\echo 'try:  \\dn+   \\dt shop.*   \\d shop.customer_order   \\du   SELECT * FROM shop.v_order_summary LIMIT 5;'
+\echo ''

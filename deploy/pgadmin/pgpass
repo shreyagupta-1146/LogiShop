@@ -1,0 +1,2 @@
+db:5432:logistics:demo_viewer:demo
+db:5432:logistics:app_user:app
